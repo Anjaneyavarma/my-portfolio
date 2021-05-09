@@ -1,38 +1,235 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family:'poppins', sans-serif;
+  background-color: #ebebeb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  font-family: 'Poppins',sans-serif;
+  cursor : pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.App{
+  height: 100%;
+}
+
+.app_header{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #1C1D25;
+}
+
+
+.navlist{
+  list-style: none;
+  display: flex;
+}
+
+.navlink{
+  color: #EBEBEB;
+  font-size: 18px;
+  font-weight: bold;
+  margin:70px;
+  text-decoration: none;
+}
+
+.navlink > span:hover{
+  position: relative;
+  font-size: 18px;
+  border-bottom: 1px solid #f25757;
+}
+
+.intro-section{
+  background-image: url(bg-desktopPro3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 91vh;
+  margin: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  
+}
+
+.intro{
+  margin-bottom: 15vh;
+}
+
+.introduction h1{
+  font-size: 40px;
+  font-weight: bolder;
   color: white;
+  text-align: center;
+}
+.intro-h1 span::before{
+  content: "I'm Anjaneya varma 🚶🏻‍♂️";
+  animation: change ease-in-out 5s;
 }
 
-.App-link {
-  color: #61dafb;
+.introduction p{
+  font-size: 20px;
+  margin-top: 5px;
+  font-weight: 1000;
+  background: linear-gradient(to right ,#6B63FF,#4f4f63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bta{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btaselect{
+  border: 2px solid #1AA3FF;
+  height: 45px;
+  background: transparent;
+  font-size: 20px;
+  width: 150px;
+  cursor : pointer;
+}
+
+.btaselect a{
+  color: #ebebeb;
+}
+
+.message{
+  border: 2px solid #1AA3FF;
+  margin-left: 8px;
+  height: 45px;
+  background: transparent;
+  font-size: 20px;
+  width: 150px;
+  cursor : pointer;
+}
+
+.message a{
+  color: #ebebeb;
+}
+
+.btaselect:hover{
+  color: red;
+}
+
+.message:hover{
+  color: red;
+}
+.cover_image{
+  object-fit: contain;
+  display: flex;
+  height: 80%;
+  width: 100%;
+}
+.cover{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+
+.scrolldown{
+  margin-top: 5px;
+  padding-left: 50%;
+}
+
+.connect{
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.icon{
+  margin-right: 10px;
+}
+
+.icon:hover{
+  color: red;
+}
+
+.footer{
+  border-top: black;
+  background-color: #1C1D25;
+}
+
+@keyframes change {
+  100%{
+    content: 'Full stack developer 👨🏻‍💻';
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+@media only screen and (max-width: 1024px) {
+    .app_header{
+      object-fit: contain;
+      justify-content: space-evenly;
+      display: flex;
+      flex-direction: row;
+    }
+    .navlist{
+      margin-left: -35px;
+      justify-content: space-evenly;
+      object-fit: contain;
+    }
+    .navlink{
+      color: #EBEBEB;
+      margin: 18px;
+      font-size: 15px;
+    }
+    
+    .navlink > span:hover{
+      position: relative;
+      font-size: 15px;
+      border-bottom: 1px solid #f25757;
+    }
+
+    .presentation{
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .intro{
+      text-align: center;
+    }
+    .introduction h1{
+      margin-top: 10px;
+      font-size: 25px;
+    }
+
+    .bta{
+      display: flex;
+      justify-content: center;
+    }
+    
+    
+    
+    .cover{
+      margin-top: -50px;
+      align-items: center;
+    }
+    .cover_image{
+      object-fit: contain;
+      height: 40%;
+      justify-content: center;
+    }
+    .connect{
+      justify-content: center;
+    }
+    .scrolldown{
+      margin-top: -60px;
+      
+    }
+  
 }
